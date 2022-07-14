@@ -22,3 +22,7 @@ const shuffleItems = (arr) =>
 		.map((x) => x.value);
 
 console.log(shuffleItems([1, 2, 3, 4, 5, 6, 7]));
+
+// Another good approach in a single line, https://javascript.info/task/shuffle
+const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
+console.log(shuffle([1, 2, 3, 4, 5, 6, 7]));
